@@ -1,0 +1,49 @@
+.card-info {
+  margin: 0%;
+  width: 100vw;
+  height: 70vh;
+  overflow: hidden;
+}
+.image-background-container {
+  width: 50vw;
+}
+.image-background-container img {
+  width: 50vw;
+  height: 70vh;
+}
+
+.description-container {
+  width: 50vw;
+  display: grid;
+  grid-template-rows: 50% 10% 15% auto;
+  img {
+    grid-row: 1;
+    justify-self: center;
+    align-self: flex-end;
+    height: 125px;
+  }
+  h2 {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    grid-row: 2;
+    justify-self: center;
+  }
+  p {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    font-size: small;
+    grid-row: 3;
+    justify-self: center;
+  }
+  .show-more-button{
+      grid-row: 4;
+      justify-self: center;
+      button{
+        display: flex;
+        flex-direction: row;
+        svg{
+            font-size: small;
+        }
+      }
+  }
+}

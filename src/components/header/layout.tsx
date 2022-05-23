@@ -8,7 +8,6 @@ import {
   Divider,
   Menu as CollapsibleMenu,
   MenuItem,
-  Tooltip,
   List,
   ListItem,
 } from "@mui/material";
@@ -18,12 +17,10 @@ import {
   LocalMallOutlined,
   WeekendOutlined,
   FavoriteOutlined,
-  AccountCircleOutlined,
   ArrowDropDown,
-  Menu,
 } from "@mui/icons-material";
 
-import "../../styles/components/layout.scss";
+import "../../styles/components/header/layout.scss";
 import CollapsibleMenuSection from "./collapsibleMenuSection";
 import IconTextButton, { IProps } from "../global/iconTextButton";
 import Logo from "./logo";
@@ -62,7 +59,7 @@ const Layout = () => {
   return (
     <React.Fragment>
       <AppBar
-        position="sticky"
+        position="fixed"
         color="transparent"
         sx={{
           border: 0,
@@ -72,7 +69,7 @@ const Layout = () => {
       >
         <Container maxWidth="xl" sx={{ alignItems: "baseline" }}>
           <Toolbar disableGutters>
-            <Logo />
+            <Logo color="white"/>
             <CollapsibleMenuSection
               anchorLayout={anchorLayout}
               handleCloseLayoutMenu={handleCloseLayoutMenu}
@@ -81,14 +78,19 @@ const Layout = () => {
               key={String(React.useId())}
             />
             <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+              <List sx={{display:"flex",flexDirection:"row"}}>
               {pages.map((page, index) => (
+                <ListItem key={index}>
                 <IconTextButton
+                  buttonClass="content-menu"
                   Icon={page.Icon}
                   content={page.content}
                   key={page.content}
-                  isDivider={index < pages.length - 1}
+                  isDivider={true}
                 />
+                </ListItem>
               ))}
+              </List>
             </Box>
             <CollapsibleUserMenu
               settings={settings}
@@ -115,13 +117,13 @@ const Layout = () => {
                     fontFamily: "monospace",
                     fontWeight: 700,
                     letterSpacing: ".3rem",
-                    color: "inherit",
+                    color: "white",
                     textDecoration: "none",
                   }}
                 >
                   Mi Cuenta
                 </Typography>
-                <ArrowDropDown />
+                <ArrowDropDown sx={{color:"white"}}/>
               </IconButton>
               <CollapsibleMenu
                 sx={{ mt: "45px" }}
@@ -145,7 +147,7 @@ const Layout = () => {
                   </MenuItem>
                 ))}
               </CollapsibleMenu>
-              <Divider orientation="vertical" flexItem variant="middle" />
+              <Divider orientation="vertical" flexItem variant="middle"/>
               <Typography
                 noWrap
                 sx={{
@@ -153,7 +155,7 @@ const Layout = () => {
                   fontFamily: "monospace",
                   fontWeight: 700,
                   letterSpacing: ".3rem",
-                  color: "inherit",
+                  color: "white",
                   textDecoration: "none",
                 }}
               >

@@ -1,6 +1,6 @@
 import { SvgIconComponent } from "@mui/icons-material";
-import { Divider, IconButton, Typography } from "@mui/material";
-import "../../styles/components/layout.scss"
+import {  IconButton, Typography } from "@mui/material";
+import "../../styles/components/global/icontext.scss"
 export interface IProps{
     Icon:SvgIconComponent,
     content:string,
@@ -10,14 +10,13 @@ export interface IProps{
 
 export default function IconTextButton({Icon, content, buttonClass, isDivider}:IProps){
     return(
-        <>
-        <IconButton id={buttonClass}>
+        <div className={buttonClass}>
+        <IconButton>
             <Icon />
             <Typography>
                 {content}
             </Typography>
         </IconButton>
-        {isDivider && <Divider orientation="vertical" flexItem  variant="middle"/>}
-        </>
+        </div>
     )
 }

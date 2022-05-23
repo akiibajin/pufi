@@ -1,6 +1,6 @@
 import { Typography } from "@mui/material";
 
-export default function Logo(){
+export default function Logo({color}:{color:string}){
     return (
         <>
         <Typography
@@ -16,7 +16,7 @@ export default function Logo(){
                 fontFamily: "monospace",
                 fontWeight: 700,
                 letterSpacing: ".3rem",
-                color: "inherit",
+                color: color,
                 textDecoration: "none",
               }}
             >
