@@ -1,5 +1,5 @@
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import IconTextButton from "./iconTextButton";
+import IconTextButton from "./IconTextButton";
 import "../../styles/components/global/imagetextcontent.scss"
 interface ImageTextContentProps {
   productImage: string;

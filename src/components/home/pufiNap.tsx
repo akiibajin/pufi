@@ -1,4 +1,4 @@
-import ImageTextContent from "../global/imageTextcontent";
+import ImageTextContent from "../global/ImageTextcontent";
 import airPlane from "../../assets/img/home/airPlane.png"
 import pufiNap from "../../assets/img/home/pufiNap.png"
 export default function PufiNap(){

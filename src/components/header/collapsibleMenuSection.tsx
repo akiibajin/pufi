@@ -5,7 +5,7 @@ import {
   List,
   ListItem,
 } from "@mui/material";
-import IconTextButton, { IProps } from "../global/iconTextButton";
+import IconTextButton, { IProps } from "../global/IconTextButton";
 import { Menu } from "@mui/icons-material";
 
 interface ICollapsibleSection {

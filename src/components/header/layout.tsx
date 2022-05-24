@@ -21,11 +21,11 @@ import {
 } from "@mui/icons-material";
 
 import "../../styles/components/header/layout.scss";
-import CollapsibleMenuSection from "./collapsibleMenuSection";
-import IconTextButton, { IProps } from "../global/iconTextButton";
-import Logo from "../global/logo";
+import CollapsibleMenuSection from "./CollapsibleMenuSection";
+import IconTextButton, { IProps } from "../global/IconTextButton";
+import Logo from "../global/Logo";
 import { Container } from "@mui/system";
-import CollapsibleUserMenu from "./collapsibleUserSection";
+import CollapsibleUserMenu from "./CollapsibleUserSection";
 
 const pages: IProps[] = [
   { Icon: WeekendOutlined, content: "PUFI PUFF" },

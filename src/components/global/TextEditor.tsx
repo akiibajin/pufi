@@ -14,7 +14,7 @@ export default function TextEditorForm({
 }: TextEditorForControlled) {
   return (
     <section className="input-container">
-      <input type={type} {...register(name, {required:true, pattern:/^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/g})} className="email-editor"/>
+      <input type={type} {...register(name, {required:true, pattern:/^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/g})}  placeholder="Ingresa tu mail" className="email-editor"/>
       {errors[name]?.type === "required" && <p className="text-helper">The email is required D:</p>}
       {errors[name]?.type === "pattern" && <p className="text-helper">Email Incorrect</p>}
     </section>

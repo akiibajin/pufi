@@ -1,11 +1,11 @@
-import ImageTextContent from "../global/imageTextcontent";
+import ImageTextContent from "../global/ImageTextcontent";
 import cartBackground from "../../assets/img/home/cart.jpg";
 import shoppingBag from "../../assets/img/home/shoppingBag.png";
 
 export default function PufiCart() {
   return (
     <>
-      <ImageTextContent
+      <ImageTextContent 
         backgroundImg={cartBackground}
         descriptionContent="Buy your bags for buy in any place"
         orientation="row-reverse"

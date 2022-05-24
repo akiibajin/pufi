@@ -1,4 +1,4 @@
-import ImageTextContent from "../global/imageTextcontent";
+import ImageTextContent from "../global/ImageTextcontent";
 import beach from "../../assets/img/home/beach.jpg"
 import beachPuff from "../../assets/img/home/beachPuff.png"
 
