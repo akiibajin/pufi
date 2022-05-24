@@ -3,6 +3,7 @@ import './App.scss';
 import { Routes, Route } from "react-router-dom"
 import Home from './views/home';
 import Header from './views/header';
+import Footer from './views/footer';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
       </Routes>
+      <Footer />
     </div>
   );
 }

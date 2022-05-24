@@ -1,0 +1,15 @@
+.footer{
+    border-top: 2px solid gray;
+    padding-top: 30px;
+}
+.top-footer{    
+    display: grid;
+    grid-template-columns: 20vw 20vw 20vw 20vw 20vw;
+}
+.bottom-footer{
+    height: 20px;
+    span{
+        position:relative;
+        padding: 30px;
+    }
+}

@@ -1,0 +1,6 @@
+@import "../../variables.scss";
+.socialNetworksContainer{
+    span{
+        @extend %font-footer
+    }
+}

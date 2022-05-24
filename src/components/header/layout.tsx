@@ -23,7 +23,7 @@ import {
 import "../../styles/components/header/layout.scss";
 import CollapsibleMenuSection from "./collapsibleMenuSection";
 import IconTextButton, { IProps } from "../global/iconTextButton";
-import Logo from "./logo";
+import Logo from "../global/logo";
 import { Container } from "@mui/system";
 import CollapsibleUserMenu from "./collapsibleUserSection";
 

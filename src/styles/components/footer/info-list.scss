@@ -1,0 +1,13 @@
+@import "../../variables.scss";
+.info-list{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    align-self: center;
+    max-height: 120px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    p{
+        @extend %font-footer
+    }
+}

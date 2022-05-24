@@ -1,0 +1,6 @@
+@import "../../variables.scss";
+.buy-secure-section{
+    p{
+        @extend %font-footer
+    }
+}
